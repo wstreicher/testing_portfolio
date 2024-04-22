@@ -4,10 +4,12 @@ RSpec.feature "Google Homepage" do
 
   context "when visiting the Google Homepage" do
     let(:search_bar_selector) { "[name='q']" }
+
     it "has a visible search bar" do
       Capybara.visit(url)
       expect(page).to have_selector(search_bar_selector)
     end
+
     it "can be used to search for a query" do
       Capybara.visit(url)
       page.fill_in("q", with: "Hello World!")
