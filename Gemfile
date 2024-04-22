@@ -13,3 +13,5 @@ gem "capybara", "~> 3.40"
 gem "httparty", "~> 0.21.0"
 
 gem "pry"
+
+gem "selenium-webdriver"

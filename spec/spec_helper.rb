@@ -1,9 +1,10 @@
 # frozen_string_literal: true
 
-require "rspec"
-require "capybara"
+require "capybara/rspec"
 require "httparty"
 require "pry"
+
+Capybara.default_driver = :selenium
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure

@@ -8,3 +8,5 @@ If you are seeing this repo, I am likely providing a demo for you already. Howev
 I've used the following tools for testing:
 
 [Open Trivia DB API](https://opentdb.com/api_config.php) - An open API for generating trivia questions.
+
+[Google Homepage](https://www.google.com/) - used to show basic Capybara functionality.
