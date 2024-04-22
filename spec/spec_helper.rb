@@ -1,6 +1,9 @@
 # frozen_string_literal: true
 
-require "rspec_tests"
+require "rspec"
+require "capybara"
+require "httparty"
+require "pry"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
