@@ -4,7 +4,7 @@ require "capybara/rspec"
 require "httparty"
 require "pry"
 
-Capybara.default_driver = :selenium
+Capybara.default_driver = :selenium_headless
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
