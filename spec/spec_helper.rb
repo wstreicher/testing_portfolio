@@ -6,7 +6,7 @@ require "pry"
 
 Capybara.default_driver = :selenium_headless
 
-Capybara.default_driver = if ENV["HEADLESS"] == 'true'
+Capybara.default_driver = if ENV["HEADLESS"] == "true"
                             :selenium_headless
                           else
                             :selenium
