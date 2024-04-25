@@ -6,6 +6,12 @@ require "pry"
 
 Capybara.default_driver = :selenium_headless
 
+Capybara.default_driver = if ENV["HEADLESS"] == 'true'
+                            :selenium_headless
+                          else
+                            :selenium
+                          end
+
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
   config.example_status_persistence_file_path = ".rspec_status"
